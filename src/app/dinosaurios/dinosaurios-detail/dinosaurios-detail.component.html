@@ -1,0 +1,30 @@
+<div class="panel-body">
+  <div class="border margin p-3">
+    <p class="h3 p-2 author-name">{{ dinosaurioDetail?.name }}</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumb">
+          <img
+            class="img-fluid img-thumbnail border border-danger"
+            src="{{ dinosaurioDetail?.image }}"
+            alt="{{ dinosaurioDetail?.name }}"
+          />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <dl>
+          <dt class="text-title">Nombre Científico</dt>
+          <dd class="text">{{dinosaurioDetail?.scientificName}}</dd>
+          <dt class="text-title">Description</dt>
+          <dd class="text">{{ dinosaurioDetail?.description }}</dd>
+          <dt class="text-title">Discovery Country</dt>
+          <dd class="text">{{ dinosaurioDetail?.discoveryCountry}}</dd>
+          <dt class="text-title">Feeding</dt>
+          <dd class="text">{{dinosaurioDetail?.feeding}}</dd>
+          <dt class="text-title">Era</dt>
+          <dd class="text">{{dinosaurioDetail?.era}}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
